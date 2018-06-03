@@ -26,7 +26,7 @@ Release/obj.target/run/run.o: ../run.cpp ../node_modules/nan/nan.h \
  ../node_modules/nan/nan_weak.h ../node_modules/nan/nan_object_wrap.h \
  ../node_modules/nan/nan_private.h \
  ../node_modules/nan/nan_typedarray_contents.h \
- ../node_modules/nan/nan_json.h ../json.hpp
+ ../node_modules/nan/nan_json.h
 ../run.cpp:
 ../node_modules/nan/nan.h:
 /home/oleg/.node-gyp/4.2.6/include/node/node_version.h:
@@ -57,4 +57,3 @@ Release/obj.target/run/run.o: ../run.cpp ../node_modules/nan/nan.h \
 ../node_modules/nan/nan_private.h:
 ../node_modules/nan/nan_typedarray_contents.h:
 ../node_modules/nan/nan_json.h:
-../json.hpp:

@@ -1,7 +1,16 @@
 const addon = require('../build/Release/run.node');
 
-const val = addon.run('/home/oleg/dogs.txt',['\\S+'], "true", 7,3,90);
 
-const util = require('util');
 
-console.log('val => \n', util.inspect(val));
+const net = require('net');
+
+const s = net.createServer(s => {
+
+});
+
+const fd = s._handle.fd;
+
+console.log('the fd:',fd);
+
+const val = addon.run(fd);
+
