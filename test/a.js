@@ -1,4 +1,4 @@
-const addon = require('../build/Release/run.node');
+// const addon = require('../build/Release/run.node');
 
 
 

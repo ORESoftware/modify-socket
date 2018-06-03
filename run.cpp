@@ -31,7 +31,7 @@ void run(const v8::FunctionCallbackInfo<v8::Value>& args) {
         return;
     }
 
-    int socket_fd = (int)( args[0]->Int32Value());
+    int socket_fd = (int)(args[0]->Int32Value());
 
 //    v8::Int socket_fd(args[0]->ToInt());
 //    int socket_fd = args[0];
