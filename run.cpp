@@ -35,18 +35,16 @@ void run(const v8::FunctionCallbackInfo<v8::Value>& args) {
 
 //    v8::Int socket_fd(args[0]->ToInt());
 //    int socket_fd = args[0];
-    int i = 1;
+    int i = true;
 
     if(setsockopt(socket_fd, IPPROTO_TCP, TCP_QUICKACK,  (void *)&i, sizeof(i)) < 0){
         printf("setsockopt failed\n");
         args.GetReturnValue().Set(false);
     }
     else{
+     printf("setsockopt succeeded\n");
         args.GetReturnValue().Set(true);
     }
-
-
-   close(socket_fd);
 
 }
 

@@ -11,7 +11,8 @@ DEFS_Debug := \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
-	'-D_DEBUG'
+	'-D_DEBUG' \
+	'-DV8_ENABLE_CHECKS'
 
 # Flags passed to all source files.
 CFLAGS_Debug := \
@@ -33,14 +34,14 @@ CFLAGS_C_Debug := \
 # Flags passed to only C++ files.
 CFLAGS_CC_Debug := \
 	-fno-rtti \
-	-std=gnu++0x \
+	-std=gnu++1y \
 	-std=c++11
 
 INCS_Debug := \
-	-I/home/oleg/.node-gyp/4.2.6/include/node \
-	-I/home/oleg/.node-gyp/4.2.6/src \
-	-I/home/oleg/.node-gyp/4.2.6/deps/uv/include \
-	-I/home/oleg/.node-gyp/4.2.6/deps/v8/include \
+	-I/home/oleg/.node-gyp/10.1.0/include/node \
+	-I/home/oleg/.node-gyp/10.1.0/src \
+	-I/home/oleg/.node-gyp/10.1.0/deps/uv/include \
+	-I/home/oleg/.node-gyp/10.1.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 DEFS_Release := \
@@ -63,8 +64,6 @@ CFLAGS_Release := \
 	-std=c++11 \
 	-std=c++11 \
 	-O3 \
-	-ffunction-sections \
-	-fdata-sections \
 	-fno-omit-frame-pointer
 
 # Flags passed to only C files.
@@ -74,14 +73,14 @@ CFLAGS_C_Release := \
 # Flags passed to only C++ files.
 CFLAGS_CC_Release := \
 	-fno-rtti \
-	-std=gnu++0x \
+	-std=gnu++1y \
 	-std=c++11
 
 INCS_Release := \
-	-I/home/oleg/.node-gyp/4.2.6/include/node \
-	-I/home/oleg/.node-gyp/4.2.6/src \
-	-I/home/oleg/.node-gyp/4.2.6/deps/uv/include \
-	-I/home/oleg/.node-gyp/4.2.6/deps/v8/include \
+	-I/home/oleg/.node-gyp/10.1.0/include/node \
+	-I/home/oleg/.node-gyp/10.1.0/src \
+	-I/home/oleg/.node-gyp/10.1.0/deps/uv/include \
+	-I/home/oleg/.node-gyp/10.1.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 OBJS := \
